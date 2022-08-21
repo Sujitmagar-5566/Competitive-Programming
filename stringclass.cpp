@@ -11,7 +11,7 @@ int main(){
   char arr[]={'a','b','c','\0'};
   string s5(arr);
   if(s0.empty()){
-    cout<<"s0 is an empty string";
+    cout<<"s0 is an empty string"<<endl;
   }
   //append 
   s0.append("I love C++");
@@ -25,11 +25,14 @@ int main(){
   s1="Mango";
   cout<<s0.compare(s1)<<endl; // returns an integer ==0 equal,>0 or <0
   // overloaded operators (we can compare two strings)
-  if( s1>s0 || s1<s0)
+  if( s1>s0 || s1<s0) { 
+      cout<<"compared"<<endl;
+      }
   // access 
     cout<<s1[0]<<endl;
   //find substring 
-  s="I want to have apple juice";
+  string s="I want to have apple juice";
+  cout<<s<<endl;
   int indx=s.find("apple");
   cout<<indx<<endl;
   //remove a word from the string
@@ -37,5 +40,6 @@ int main(){
   int len=word.length();
   s.erase(indx,len);
   cout<<s;
-  
+  return 0;
+} 
   
