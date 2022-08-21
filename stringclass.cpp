@@ -40,6 +40,14 @@ int main(){
   int len=word.length();
   s.erase(indx,len);
   cout<<s;
+  //Iterate over all the characters in the string
+  for(int i=0;i<s1.length();i++){
+    cout<<s1[i]<<":";
+  } //Iterators
+  for(auto it = s1.begin(); it!= s1.end();it++){
+    cout<<(*it)<<",";
+  }
+  // mango s1.begin()=m
   return 0;
 } 
   
