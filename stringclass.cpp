@@ -48,6 +48,11 @@ int main(){
     cout<<(*it)<<",";
   }
   // mango s1.begin()=m
+  
+  //For each loop
+  for(auto c:s1){
+    cout<<c<<".";
+  }
   return 0;
 } 
   
