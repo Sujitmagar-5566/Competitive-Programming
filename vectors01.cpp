@@ -15,5 +15,29 @@ int main(){
   for(auto it=b.begin();it!=b.endl;it++){
     cout<<(*it)<<endl;
   }
+  //for each loop
+  for(auto x:d){
+    cout<<x<<",";
+  }
+  //discuss more functions
+  vector<int> v;
+  int n;
+  cin>>n;
+  for(int i=0;i<n;i++){
+    int no;
+    cin>>no;
+    v.push_back(no);
+    for(auto x:v){
+      cout<<x<<",";
+    }
+    
+    //understand at memory level, what are the differences in the loop
+    cout<<v.size()<<endl;
+    cout<<v.capacity()<<endl; //size of underlying array 
+    cout<<v.max_size()<<endl; //maximum no of elements a vector can hold in the worst case according to avbl memory
+    
+    cout<<d.size()<<endl;
+    cout<<d.capacity()<<endl; //size of underlying array 
+    cout<<d.max_size()<<endl; //maximum no of elements a vector can hold in the worst case according to avbl memory
   return 0;
 }
