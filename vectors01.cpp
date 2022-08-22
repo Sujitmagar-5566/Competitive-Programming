@@ -33,11 +33,11 @@ int main(){
     
     //understand at memory level, what are the differences in the loop
     cout<<v.size()<<endl;
-    cout<<v.capacity()<<endl; //size of underlying array 
+    cout<<v.capacity()<<endl; //size of underlying array --> 8
     cout<<v.max_size()<<endl; //maximum no of elements a vector can hold in the worst case according to avbl memory
     
     cout<<d.size()<<endl;
-    cout<<d.capacity()<<endl; //size of underlying array 
+    cout<<d.capacity()<<endl; //size of underlying array --> 5
     cout<<d.max_size()<<endl; //maximum no of elements a vector can hold in the worst case according to avbl memory
   return 0;
 }
