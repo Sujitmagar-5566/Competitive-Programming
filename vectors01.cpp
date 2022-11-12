@@ -12,7 +12,7 @@ int main(){
   for(int i=0;i<c.size();i++){
     cout<<c[i]<<endl;
   }
-  for(auto it=b.begin();it!=b.endl;it++){
+  for(auto it=b.begin();it!=b.end();it++){
     cout<<(*it)<<endl;
   }
   //for each loop
